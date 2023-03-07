@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,25 +91,44 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
   list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -52,21 +139,163 @@ table {
 /*                 Setup                  */
 
 /*               Borderbox                */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 /* clearfix */
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
   content: "";
   display: table;
 }
+
 .clearfix:after {
   clear: both;
 }
+
 .clearfix {
   clear: both;
   *zoom: 1;
 }
+
 /*               End of Setup             */
+
+
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  padding: 0 10%;
+  background-color: gray;
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+li {
+  color:
+}
+
+
+
+.heroPicture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+  height: 600px;
+  background-image: url(images/hero_iphone_13pro.jpg);
+  background-position: center;
+}
+
+.hero,
+h1 {
+  font-size: 50px;
+}
+
+.hero,
+h2 {
+  font-size: 25px;
+}
+
+.subHero {
+  display: flex;
+  gap: 10px;
+}
+
+
+.subHero div {
+  display: flex;
+  width: 25%;
+  height: 200px;
+  background-position: center;
+}
+
+.subPic1 {
+  background-image: url(images/macbook_large.jpg);
+}
+
+.subPic2 {
+  background-image: url(images/ipad_pro_large.jpg);
+}
+
+.subPic3 {
+  background-image: url(images/watch_large.jpg);
+}
+
+.subPic4 {
+  background-image: url(images/accessories_large.jpg);
+}
+
+
+.subHero2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+
+footer {
+  padding: 20px 10%;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContent1 {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+footer div ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  color: red;
+}
+
+
+.footerContent2 {
+  display: flex;
+  flex-direction: column
+}
+
+.cop {
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  width: 100%;
+  border-top: 2px black solid;
+}
