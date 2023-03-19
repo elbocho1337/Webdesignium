@@ -1,0 +1,472 @@
+.searchbar {
+    margin-bottom: auto !important;
+    margin-top: auto !important;
+    height: 40px !important;
+    border: 1px solid gray !important;
+    border-radius: 40px !important;
+    padding: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+#searchIcon {
+
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.search_input {
+
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+
+    line-height: 20px !important;
+    transition: 0.3s linear !important;
+}
+
+.searchbar:hover>.search_input {
+    padding: 0 10px !important;
+    width: 260px !important;
+    transition: width 0.3s linear !important;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .searchbar:hover>.search_input {
+        padding: 0 10px !important;
+        width: 70vw !important;
+        transition: width 0.3s linear !important;
+    }
+}
+
+
+
+
+/* --SEARCHBAR-- */
+
+
+
+
+/* --NAVBAR-- */
+
+#navlogo {
+    height: 30px;
+    width: 30px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iMTM5LjkzcHgiIGhlaWdodD0iMTUwLjM0cHgiIHZpZXdCb3g9IjAgMCAxMzkuOTMgMTUwLjM0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMzkuOTMgMTUwLjM0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZGVmcz4KCQk8cmVjdCBpZD0iU1ZHSURfMV8iIHg9Ii03MS42NyIgeT0iLTcwLjY1IiB3aWR0aD0iMjgzLjQ2IiBoZWlnaHQ9IjI5Mi4xNiIvPgoJPC9kZWZzPgoJPGNsaXBQYXRoIGlkPSJTVkdJRF8yXyI+CgkJPHVzZSB4bGluazpocmVmPSIjU1ZHSURfMV8iICBvdmVyZmxvdz0idmlzaWJsZSIvPgoJPC9jbGlwUGF0aD4KCTxwYXRoIGNsaXAtcGF0aD0idXJsKCNTVkdJRF8yXykiIGZpbGw9IiNGRjM4NUMiIGQ9Ik0xMzcuODIsMTA2LjdjLTAuNjctMS44OS0xLjQ2LTMuNzItMi4yMS01LjQyYy0xLjE1LTIuNjEtMi4zNi01LjIyLTMuNTItNy43NQoJCWwtMC4wOS0wLjJjLTEwLjQxLTIyLjU3LTIxLjU4LTQ1LjQ2LTMzLjItNjguMDFsLTAuNDktMC45NmMtMS4xOS0yLjMtMi40MS00LjY4LTMuNjctNy4wMmMtMS40Ny0yLjczLTMuMDktNS42My01LjQtOC4zMgoJCWMtNC45Ni01LjgxLTExLjgtOS0xOS4yOC05Yy03LjQ4LDAtMTQuMzIsMy4yLTE5LjI4LDkuMDFjLTIuMywyLjY5LTMuOTIsNS41OS01LjM5LDguMzJjLTEuMjcsMi4zNi0yLjUxLDQuNzctMy43LDcuMDlsLTAuNDYsMC44OQoJCUMyOS41MSw0Ny44NywxOC4zNCw3MC43NSw3Ljk0LDkzLjMybC0wLjE1LDAuMzNjLTEuMTUsMi40OS0yLjMzLDUuMDYtMy40Niw3LjYyYy0wLjc1LDEuNy0xLjUzLDMuNTMtMi4yMSw1LjQyCgkJYy0xLjk3LDUuNTUtMi41NiwxMC44NS0xLjc5LDE2LjJjMS42LDExLjIxLDkuMTEsMjAuODEsMTkuNiwyNS4wNmMzLjg5LDEuNTgsOC4wMywyLjM4LDEyLjI5LDIuMzhjMS4zMSwwLDIuNjQtMC4wOCwzLjk2LTAuMjMKCQljNS4wNC0wLjU5LDEwLjEzLTIuMywxNS4xMS01LjExYzYuMDktMy40MywxMi4xMS04LjQ2LDE4LjY5LTE1LjY0YzYuNTgsNy4xOCwxMi41OSwxMi4yMSwxOC42OSwxNS42NAoJCWM0Ljk4LDIuOCwxMC4wNiw0LjUyLDE1LjExLDUuMTFjMS4zMiwwLjE1LDIuNjUsMC4yMywzLjk2LDAuMjNjNC4yNiwwLDguMzktMC44LDEyLjI5LTIuMzhjMTAuNDktNC4yNSwxOC0xMy44NiwxOS42LTI1LjA2CgkJQzE0MC4zNywxMTcuNTQsMTM5Ljc5LDExMi4yNCwxMzcuODIsMTA2LjcgTTY5Ljk3LDExNC41M2MtOC4xNC0xMC4zNC0xMy4zNi0xOS45My0xNS4xOS0yNy45OGMtMC43Ny0zLjM4LTAuOTUtNi40OC0wLjUyLTkuMjMKCQljMC4zNy0yLjM3LDEuMTgtNC40OSwyLjQyLTYuMzFjMi44MS00LjEsNy43OC02LjU0LDEzLjMtNi41NGM1LjUxLDAsMTAuNDksMi40NSwxMy4yOSw2LjU1YzEuMjQsMS44MSwyLjA2LDMuOTMsMi40Miw2LjMxCgkJYzAuNDIsMi43NSwwLjI1LDUuODUtMC41Miw5LjIzQzgzLjMzLDk0LjYsNzguMSwxMDQuMTksNjkuOTcsMTE0LjUzIE0xMzAuMSwxMjEuNTRjLTEuMTIsNy44NC02LjM3LDE0LjU1LTEzLjcxLDE3LjUyCgkJYy0zLjYsMS40Ni03LjUzLDEuOTctMTEuNTIsMS41MWMtMy44My0wLjQ0LTcuNTktMS43My0xMS41MS0zLjk0Yy01LjQzLTMuMDUtMTAuOTItNy43NC0xNy4xLTE0LjYyCgkJYzkuODQtMTIuMTUsMTUuOTgtMjMuMzUsMTguMjUtMzMuMzNjMS4wNC00LjU2LDEuMjYtOC44OCwwLjY1LTEyLjgyYy0wLjU5LTMuODEtMS45My03LjI3LTMuOTktMTAuMjgKCQljLTQuNi02LjcxLTEyLjUzLTEwLjcyLTIxLjIyLTEwLjcyYy04LjY4LDAtMTYuNjEsNC4wMS0yMS4yMSwxMC43MmMtMi4wNiwzLjAxLTMuNDEsNi40Ny0zLjk5LDEwLjI4CgkJYy0wLjYxLDMuOTUtMC4zOSw4LjI2LDAuNjUsMTIuODJjMi4yNyw5Ljk4LDguNDIsMjEuMTgsMTguMjYsMzMuMzRjLTYuMTgsNi44OC0xMS42NywxMS41Ni0xNy4wOSwxNC42MgoJCWMtMy45MiwyLjIxLTcuNjgsMy40OS0xMS41MSwzLjk0Yy0zLjk5LDAuNDYtNy45My0wLjA1LTExLjUzLTEuNTFjLTcuMzMtMi45Ny0xMi41OC05LjY5LTEzLjctMTcuNTIKCQljLTAuNTUtMy44My0wLjEzLTcuNTIsMS4zMy0xMS42MmMwLjU0LTEuNTEsMS4xNi0zLDEuOTQtNC43NmMxLjEtMi40OSwyLjI3LTUuMDMsMy40LTcuNDhsMC4xNS0wLjMzCgkJYzEwLjM1LTIyLjQ1LDIxLjQ1LTQ1LjIsMzMuMDEtNjcuNjRsMC40Ni0wLjg5YzEuMTgtMi4yOSwyLjM5LTQuNjUsMy42Mi02Ljk0YzEuMjctMi4zNywyLjU2LTQuNjYsNC4yNC02LjYzCgkJYzMuMTUtMy42OSw3LjI5LTUuNjQsMTEuOTctNS42NGM0LjY4LDAsOC44MiwxLjk1LDExLjk3LDUuNjRjMS42OSwxLjk4LDIuOTcsNC4yNiw0LjI0LDYuNjNjMS4yMiwyLjI3LDIuNDIsNC42MSwzLjU5LDYuODcKCQlsMC40OSwwLjk2YzExLjU2LDIyLjQzLDIyLjY2LDQ1LjE5LDMzLjAxLDY3LjY0bDAuMDksMC4yYzEuMTUsMi40OSwyLjM0LDUuMDcsMy40Niw3LjZjMC43OCwxLjc3LDEuNDEsMy4yNSwxLjk0LDQuNzYKCQlDMTMwLjIzLDExNC4wMSwxMzAuNjUsMTE3LjcxLDEzMC4xLDEyMS41NCIvPgo8L2c+Cjwvc3ZnPgo=);
+    background-position: center;
+    background-size: 30px 30px;
+}
+
+#navbar {
+    padding: 0.5rem 1rem;
+}
+
+
+#imgSize {
+    height: 20px;
+    width: 20px;
+    transform: translateY(-1px);
+
+}
+
+
+.nav-item.active {
+    padding: 10px 0.5rem !important;
+
+}
+
+.nav-item.dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item.active :hover {
+    background-color: #ededed;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+
+.dropdown-menu {
+    transform: translateX(-110px) translateY(-50px);
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .nav-item.dropdown {
+        display: block;
+        margin: 0px 0 0 8px;
+
+    }
+
+    .nav-link {
+        padding: 5px !important;
+    }
+
+    .dropdown-menu {
+        transform: translateX(0px) translateY(0px);
+    }
+
+    #dropSearchBar {
+        justify-content: start;
+        margin: 0 0 0 8px;
+        padding: 0;
+
+    }
+
+    #navbarSupportedContent {
+        transform: translatex(-10px);
+    }
+
+    .searchbar {
+        margin-top: 10px;
+    }
+
+
+
+}
+
+
+#forLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--NAVBAR--*/
+
+hr {
+    transform: translateY(-15px);
+}
+
+
+/*--HERO--*/
+
+.containerContent1 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: wrap;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+
+
+
+.btn-pink-moon {
+    background: #ec008c;
+
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
+
+    background: linear-gradient(to right, #fc6767, #ec008c);
+
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.btn-pink-moon:hover {
+    color: #fff;
+}
+
+#picturePub {
+    border-radius: 10px;
+}
+
+
+#mainDivider {
+    margin: 3rem 0 1rem;
+}
+
+
+#socialLinks {
+    border-left: lightgray solid 1px;
+    padding-left: 4rem;
+}
+
+
+.socialFollow__icons {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.paddingBottom {
+    padding-bottom: 16px;
+}
+
+
+#articleMain {
+    margin-right: 5rem;
+}
+
+@media only screen and (max-width: 992px) {
+    #picturePub {
+        margin-bottom: 20px;
+    }
+
+    #extraPaddingSm {
+        padding: 16px 0;
+    }
+
+    #socialLinks {
+        display: flex;
+        flex-direction: column;
+        border-left: none;
+        padding-top: 1rem;
+        padding-left: 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    #articleMain {
+        margin-right: 20px;
+    }
+}
+
+/*--SLIDER--*/
+
+
+#content3 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%) !important;
+}
+
+
+#sliderContainer {
+    padding: 0;
+}
+
+
+
+#sliderMargin {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 50px;
+}
+
+
+#scrollCard {
+    padding: 0px 30px;
+}
+
+#headerSlider {
+    padding: 3rem 48px 1rem;
+}
+
+
+/*--SLIDER--*/
+
+
+
+/*--CATEGORY--*/
+
+.categoryNav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+#categories {
+    margin: 50px 0 0;
+}
+
+.categoryNav button {
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.categoryCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.categoryCard>.blackLink {
+    font-size: large;
+    font-weight: 600;
+}
+
+
+.container-flex {
+    margin: 0 48px;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    #categories {
+        font-size: 28px;
+    }
+
+    .categoryNav button {
+        padding: 4px 11px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+}
+
+
+#categoriesContainer {
+    padding: 0 48px;
+}
+
+
+
+/*--CATEGORY--*/
+
+
+
+
+/*--FOOTER--*/
+#footer {
+    border-top: lightgray solid 1px;
+    background-color: #f7f7f7 !important;
+}
+
+
+ul .text-secondary {
+    font-size: 14px !important;
+}
+
+
+
+#h5Target h5 {
+    font-size: 15px !important;
+    margin-bottom: 4px;
+}
+
+.list-unstyled li {
+    margin: 2px 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #h5Target div {
+        padding: 10px;
+    }
+
+    #footerContRuler {
+        border-top: lightgray 1px solid
+    }
+}
+
+
+
+#rights {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: lightgray solid 1px;
+    font-size: 13px;
+}
+
+#rights div {
+    padding: 0;
+}
+
+
+.bullet-space {
+    padding: 0 4px;
+
+}
+
+/*--FOOTER--*/
+
+
+
+
+
+/*--General--*/
+
+.whiteLink {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s
+}
+
+.whiteLink:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 70%;
+    transition: 0.3s linear;
+
+}
+
+.blackLink {
+    color: black !important;
+}
+
+.blackLink:hover {
+    color: black !important;
+}
+
+.small {
+    font-size: 16px;
+    color: #717171;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+.roundedCSS {
+    border-radius: 10px;
+}
+
+
+.margin15 {
+    margin: 40px 0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .mx-5 {
+        margin: 0 20px !important;
+    }
+
+    #categoriesContainer {
+        padding: 0 20px;
+    }
+
+    #ppp {
+        padding-left: 15px;
+        margin-right: 20px !important;
+        padding-right: 15px;
+    }
+
+    #categoriesContainer .blackLink {
+        font-size: medium !important;
+
+    }
+
+    #categoriesContainer .small {
+        font-size: small;
+    }
+}
+
+#ppp {
+    margin-right: 5rem;
+}
